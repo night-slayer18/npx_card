@@ -1,10 +1,10 @@
 {
-  "name": "night-slayer",
+  "name": "night-slayer18",
   "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "night-slayer": "./index.js"
+    "night-slayer18": "./index.js"
   },
   "repository": {
     "type": "git",

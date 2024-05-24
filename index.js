@@ -20,7 +20,7 @@ const data = {
     instagram: chalk.gray("https://instagram.com/") + chalk.magenta("_n_i_g_h_t__s_l_a_y_e_r_"),
     hackerRank: chalk.gray("https://hackerrank.com/profile/") + chalk.red("S4M4NU4i"),
     web: chalk.cyan("https://nightslayer.me"),
-    npx: chalk.red("npx") + " " + chalk.white("night-slayer"),
+    npx: chalk.red("npx") + " " + chalk.white("night-slayer18"),
 
     labelWork: chalk.white.bold("    Student:"),
     labelTwitter: chalk.white.bold("    Twitter:"),
