@@ -11,7 +11,7 @@ clear()
 const data = {
     name: chalk.bold.green("             Samanuai A"),
     handle: chalk.white("@night-slayer18"),
-    Student: `${chalk.white("Computer Science Engineering at")} ${chalk
+    student: `${chalk.white("Computer Science Engineering at")} ${chalk
         .hex("#2b82b2")
         .bold("FISAT, Angamaly")}`,
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("NiGhTsL93934079"),
@@ -36,7 +36,7 @@ const me = boxen(
     [
         `${data.name}`,
         ``,
-        `${data.labelWork}  ${data.work}`,
+        `${data.labelWork}  ${data.student}`,
         ``,
         `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelGitHub}  ${data.github}`,
