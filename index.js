@@ -9,7 +9,7 @@ import clear from 'clear'
 clear()
 
 const data = {
-    name: chalk.bold.green("             Samanuai A"),
+    name: chalk.bold.green("                           Samanuai A"),
     handle: chalk.white("@night-slayer18"),
     student: `${chalk.white("Computer Science Engineering at")} ${chalk
         .hex("#2b82b2")
@@ -22,7 +22,7 @@ const data = {
     web: chalk.cyan("https://nightslayer.me"),
     npx: chalk.red("npx") + " " + chalk.white("night-slayer"),
 
-    labelWork: chalk.white.bold("       Student:"),
+    labelWork: chalk.white.bold("    Student:"),
     labelTwitter: chalk.white.bold("    Twitter:"),
     labelGitHub: chalk.white.bold("     GitHub:"),
     labelLinkedIn: chalk.white.bold("   LinkedIn:"),
