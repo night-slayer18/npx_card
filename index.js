@@ -61,9 +61,9 @@ const me = boxen(
     {
         margin: 1,
         float: 'center',
-        padding: 1,
-        borderStyle: "single",
-        borderColor: "green"
+        padding: 2,
+        borderStyle: "round",
+        borderColor: "blue",
     }
 );
 
