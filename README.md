@@ -13,19 +13,19 @@ The final output will look something like this
                                      │                                                                      │
                                      │                               SamanuaiA                              │
                                      │                                                                      │
-                                     │          Student: Computer ScienceEngineering atFISAT, Angamaly      │
+                                     │          Student: Computer Science Engineering at FISAT, Angamaly    │
                                      │                                                                      │
-                                     │          Twitter: https://twitter.comNiGhTsL93934079                 │
-                                     │           GitHub: https://github.comnight-slayer18                   │
-                                     │         LinkedIn: https://linkedin.cominsamanuai                     │
-                                     │        Instagram: https://instagramcom_n_i_g_h_t__s_l_a_y__r_        │
-                                     │       HackerRank: https://hackerrankcom/profileS4M4NU4i              │
+                                     │          Twitter: https://twitter.com/NiGhTsL93934079                │
+                                     │           GitHub: https://github.com/night-slayer18                  │
+                                     │         LinkedIn: https://linkedin.com/in/samanuai                   │
+                                     │        Instagram: https://instagram.com/_n_i_g_h_t__s_l_a_y__r_      │
+                                     │       HackerRank: https://hackerrank.com/profile/S4M4NU4i            │
                                      │                                                                      │
                                      │            Email: samanuaia257@gmailcom                              │
                                      │                                                                      │
-                                     │              Web: https://nightslayerme                              │
+                                     │              Web: https://nightslayer.me                             │
                                      │                                                                      │
-                                     │             Card: npxnight-slayer18                                  │
+                                     │             Card: npx night-slayer18                                 │
                                      │                                                                      │
                                      │      I am currently looking for new opportunities,                   │
                                      │      my inbox is always open. Whether you have a                     │
