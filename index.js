@@ -19,6 +19,7 @@ const data = {
     linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("samanuai"),
     instagram: chalk.gray("https://instagram.com/") + chalk.magenta("_n_i_g_h_t__s_l_a_y_e_r_"),
     hackerRank: chalk.gray("https://hackerrank.com/profile/") + chalk.red("S4M4NU4i"),
+    email: chalk.white("samanuaia257@gmail.com"),
     web: chalk.cyan("https://nightslayer.me"),
     npx: chalk.red("npx") + " " + chalk.white("night-slayer18"),
 
@@ -28,6 +29,7 @@ const data = {
     labelLinkedIn: chalk.white.bold("   LinkedIn:"),
     labelInstagram: chalk.white.bold("  Instagram:"),
     labelHackerRank: chalk.white.bold(" HackerRank:"),
+    labelEmail: chalk.white.bold("      Email:"),
     labelWeb: chalk.white.bold("        Web:"),
     labelCard: chalk.white.bold("       Card:")
 };
@@ -43,6 +45,9 @@ const me = boxen(
         `${data.labelLinkedIn}  ${data.linkedin}`,
         `${data.labelInstagram}  ${data.instagram}`,
         `${data.labelHackerRank}  ${data.hackerRank}`,
+        ``,
+        `${data.labelEmail}  ${data.email}`,
+        ``,
         `${data.labelWeb}  ${data.web}`,
         ``,
         `${data.labelCard}  ${data.npx}`,
