@@ -18,7 +18,7 @@ The final output will look something like this
                                      │          Twitter: https://twitter.com/NiGhTsL93934079                │
                                      │           GitHub: https://github.com/night-slayer18                  │
                                      │         LinkedIn: https://linkedin.com/in/samanuai                   │
-                                     │        Instagram: https://instagram.com/_n_i_g_h_t__s_l_a_y__r_      │
+                                     │        Instagram: https://instagram.com/_n_i_g_h_t__s_l_a_y_e_r_     │
                                      │       HackerRank: https://hackerrank.com/profile/S4M4NU4i            │
                                      │                                                                      │
                                      │            Email: samanuaia257@gmailcom                              │
