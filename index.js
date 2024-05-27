@@ -5,8 +5,75 @@
 import chalk from 'chalk'
 import boxen from 'boxen'
 import clear from 'clear'
+import inquirer from 'inquirer'
+import open from 'open'
+import fs from 'fs'
+import axios from 'axios'
+import path from 'path'
+import ora from 'ora'
+import cliSpinners from 'cli-spinners'
 
 clear()
+
+const prompt = inquirer.createPromptModule()
+
+const questions = [
+    {
+        type: 'list',
+        name: 'action',
+        message: 'What do you want to do?',
+        choices: [
+            {
+                name: `Send me an ${chalk.green.bold('email')}?`,
+                value: () => {
+                    open('mailto:samanuaia257@gmail.com');
+                    console.log('\nDone, see you soon at inbox.\n');
+                }
+            },
+            {
+                name: `Download my ${chalk.magenta.bold('Resume')}?`,
+                value: () => {
+                    const spinner = ora({
+                        text: 'Downloading resume...',
+                        spinner: cliSpinners.dots
+                    }).start();
+
+                    const downloadUrl = 'https://night-slayer.netlify.app/';
+                    const downloadPath = path.join(process.cwd(), 'samanuai_resume.html');
+                    const writer = fs.createWriteStream(downloadPath);
+
+                    axios({
+                        url: downloadUrl,
+                        method: 'GET',
+                        responseType: 'stream'
+                    })
+                    .then(response => {
+                        response.data.pipe(writer);
+                        writer.on('finish', () => {
+                            console.log('\nResume downloaded successfully!\n');
+                            open(downloadPath);
+                            spinner.stop();
+                        });
+                        writer.on('error', err => {
+                            console.error('\nError downloading the resume:', err);
+                            spinner.stop();
+                        });
+                    })
+                    .catch(error => {
+                        console.error('\nError making request to download the resume:', error);
+                        spinner.stop();
+                    });
+                }
+            },
+            {
+                name: 'Just quit.',
+                value: () => {
+                    console.log('Good bye!\n');
+                }
+            }
+        ]
+    }
+];
 
 const data = {
     name: chalk.bold.green("                           Samanuai A"),
@@ -73,3 +140,14 @@ const me = boxen(
 );
 
 console.log(me);
+
+const tip = [
+    `Tip: ${chalk.cyanBright(
+        "cmd/ctrl + click"
+    )} on the links above to open them in your browser.`,
+    '',
+].join("\n");
+
+console.log(tip);
+
+prompt(questions).then(answer => answer.action())
