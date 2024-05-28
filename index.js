@@ -12,6 +12,7 @@ import axios from 'axios'
 import path from 'path'
 import ora from 'ora'
 import cliSpinners from 'cli-spinners'
+import { getGithubProfile, getGithubRepos } from './lib/github.js'
 
 clear()
 
@@ -24,7 +25,7 @@ const questions = [
         message: 'What do you want to do?',
         choices: [
             {
-                name: `Send me an ${chalk.green.bold('email')}?`,
+                name: `Send me an ${chalk.green.bold('Email')}?`,
                 value: () => {
                     open('mailto:samanuaia257@gmail.com');
                     console.log('\nDone, see you soon at inbox.\n');
@@ -63,6 +64,18 @@ const questions = [
                         console.error('\nError making request to download the resume:', error);
                         spinner.stop();
                     });
+                }
+            },
+            {
+                name: `View my ${chalk.blue.bold('GitHub')} profile?`,
+                value: () => {
+                    getGithubProfile('night-slayer18');
+                }
+            },
+            {
+                name: `View my ${chalk.cyan.bold('Top 5 Github')} Repositories?`,
+                value: () => {
+                    getGithubRepos('night-slayer18');
                 }
             },
             {
@@ -144,7 +157,7 @@ console.log(me);
 const tip = [
     `Tip: ${chalk.cyanBright(
         "cmd/ctrl + click"
-    )} on the links above to open them in your browser.`,
+    )} on the links to open them in your browser.`,
     '',
 ].join("\n");
 
